@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="597"
+   height="528"
+   fill="none"
+   viewBox="0 0 597 528"
+   version="1.1"
+   id="svg17"
+   sodipodi:docname="mascara-form.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs21" />
+  <sodipodi:namedview
+     id="namedview19"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.3617424"
+     inkscape:cx="298.14743"
+     inkscape:cy="264"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <mask
+     id="a"
+     width="597"
+     height="528"
+     x="0"
+     y="0"
+     maskUnits="userSpaceOnUse"
+     style="mask-type:alpha">
+    <path
+       fill="#000"
+       fill-opacity=".2"
+       d="M596.791 524.517H.02l149.192-262.259L298.405 0l149.193 262.258 149.193 262.259Z"
+       opacity=".2"
+       id="path2" />
+    <path
+       fill="#EAEAEA"
+       fill-opacity=".2"
+       d="M489.147 524.517H.02l122.282-214.863L244.583 94.792l122.282 214.862 122.282 214.863Z"
+       opacity=".2"
+       id="path4" />
+    <path
+       fill="#EAEAEA"
+       fill-opacity=".2"
+       d="M379.188 524.517H.02l94.792-166.835 94.792-166.834 94.792 166.834 94.792 166.835Z"
+       opacity=".2"
+       id="path6" />
+    <path
+       fill="#EAEAEA"
+       fill-opacity=".2"
+       d="M280.605 524.517H.02l70.146-123.23 70.146-123.23 70.146 123.23 70.147 123.23Z"
+       opacity=".2"
+       id="path8" />
+    <path
+       fill="#EAEAEA"
+       fill-opacity=".2"
+       d="M185.793 527.765H0l46.448-81.649 46.448-81.649 46.449 81.649 46.448 81.649Z"
+       opacity=".2"
+       id="path10" />
+  </mask>
+  <g
+     mask="url(#a)"
+     id="g15"
+     transform="translate(298.14743,0.73435327)">
+    <path
+       fill="#ffffff"
+       fill-opacity="0.2"
+       d="M 0,-3 H 298 V 524.76 H 0 Z"
+       id="path13" />
+  </g>
+</svg>

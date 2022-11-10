@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="language" content="pt-BR">
+    <title>Live Planet - Metaverso</title>
+    <meta name="description"
+        content="O primeiro METAVERSO do Brasil para interação imersiva em tempo real, entre pessoas, marcas e produtos.">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Rugemtugem">
+    <meta name="keywords" content="metaverso, web30, escritórios, mapas, nft, blockchan, virtual">
+
+    <meta property="og:title" content="Live Planet - Metaverso">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://liveplanet.com.br/">
+    <meta property="og:image" content="https://liveplanet.com.br/assets/img/liveplanet.com.br.png">
+    <meta property="og:site_name" content="Live Planet - Metaverso">
+    <meta property="og:description"
+        content="O primeiro METAVERSO do Brasil para interação imersiva em tempo real, entre pessoas, marcas e produtos.">
+    <meta property="og:video" content="https://vimeo.com/482794755">
+    <meta property="og:locale" content="Brazil">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@liveplanet_meta">
+    <meta name="twitter:title" content="Live Planet - Metaverso">
+    <meta name="twitter:creator" content="@liveplanet_meta">
+    <meta name="twitter:description"
+        content="O primeiro METAVERSO do Brasil para interação imersiva em tempo real, entre pessoas, marcas e produtos.">
+
+    <!-- Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NQKZPHR');
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Google verification-->
+    <meta name="google-site-verification" content="LRnxKy8ERFONrAgc9026lGdNJIWKyrTPkPuHhpCvvoM" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/img/liveplanet.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--JS-COOKIE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- Css Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Chamando topo e rodape-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YL9KN07E1N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YL9KN07E1N');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body id="principal">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=" GTM-NQKZPHR" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!--Script do menu fixado no topo-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    document.getElementById('mainNav').classList.add('fixed-top');
+                    // adiciona o topo de preenchimento para mostrar o conteúdo atrás da barra de navegação
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('mainNav').classList.remove('fixed-top');
+                    // remove a parte superior do preenchimento do corpo
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        });
+    </script>
+    <div id="esconder" onclick="myFunction()" class="notification-top-bar fixed-bottom">
+        <p class="p-0 m-0">
+            Ao continuar a navegação, você concorda com nosso uso de cookies e com
+            os termos da nossa Política de Cookies.
+            <a class="btn ms-4" href="#" role="button">CONCORDO</a>
+        </p>
+    </div>
+    <section class="pt-5" id="topo">
+        <!--Sessão do topo-->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark" id="mainNav">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand me-5" href="#">
+                        <svg width="220" viewBox="0 0 157 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M53.7802 47.0047H26.8901H0L13.445 23.5023L26.8901 0L40.3351 23.5023L53.7802 47.0047Z"
+                                fill="#CF50F9" />
+                            <path
+                                d="M50.4851 41.2299H26.889H3.29297L15.091 20.615L26.889 0.00012207L38.6871 20.615L50.4851 41.2299Z"
+                                fill="#58CFEF" />
+                            <path
+                                d="M50.4868 41.2299H30.1848H9.88281L20.0338 23.4856L30.1848 5.74133L40.3358 23.4856L50.4868 41.2299Z"
+                                fill="#2D349E" />
+                            <path
+                                d="M43.6972 41.2484H26.7832H9.86914L18.3262 26.4652L26.7832 11.6821L35.2402 26.4652L43.6972 41.2484Z"
+                                fill="#131542" />
+                            <path
+                                d="M28.4546 18.1565C26.3171 18.1582 24.2066 18.6339 22.2755 19.5492L18.2711 26.4891L14.0801 33.7525C14.3519 37.1084 15.7904 40.2635 18.1463 42.6712C19.4898 44.0419 21.0934 45.1312 22.8634 45.8753C24.6334 46.6194 26.5342 47.0034 28.4546 47.0048C30.375 47.0034 32.2758 46.6194 34.0458 45.8753C35.8158 45.1312 37.4195 44.0419 38.7629 42.6712C40.5648 40.8315 41.8412 38.5436 42.4595 36.045C42.7445 34.9121 42.8908 33.7488 42.895 32.5807C42.8944 29.4546 41.8772 26.4134 39.9964 23.9148C38.1157 21.4162 35.4731 19.5956 32.4668 18.727C31.1629 18.3494 29.8122 18.1573 28.4546 18.1565Z"
+                                fill="#FBBA3C" />
+                            <path opacity="0.3"
+                                d="M42.5804 35.4738H14.3301C14.7569 37.5631 15.6416 39.532 16.9207 41.2392H39.9899C41.1606 39.6882 42.006 37.9172 42.4755 36.0323C42.5141 35.8468 42.5491 35.6606 42.5804 35.4738Z"
+                                fill="#ED3C46" />
+                            <path opacity="0.5"
+                                d="M42.5964 29.7084H16.3891L14.0645 33.7372C14.1181 34.321 14.2072 34.901 14.3314 35.4739H42.5817C42.7905 34.5177 42.9015 33.5427 42.9128 32.564C42.9026 31.604 42.7967 30.6474 42.5964 29.7084V29.7084Z"
+                                fill="#ED3C46" />
+                            <path opacity="0.7"
+                                d="M39.9963 23.9429H19.7154L18.2599 26.4654L16.3887 29.7084H42.596C42.1665 27.6183 41.2786 25.6493 39.9963 23.9429Z"
+                                fill="#ED3C46" />
+                            <path
+                                d="M28.4546 18.123C26.3147 18.1248 24.2017 18.601 22.2684 19.5174L19.7148 23.9428H39.9958C38.1249 21.4235 35.4837 19.5811 32.4715 18.6943C31.1661 18.3162 29.8138 18.1239 28.4546 18.123Z"
+                                fill="#ED3C46" />
+                            <path
+                                d="M1.67125 66.5813V52.1613H3.29125V64.9613H16.0713V66.5813H1.67125ZM17.4372 66.5813V52.1813H19.0772V66.5813H17.4372ZM29.4345 66.5813L21.0945 52.1813H22.9945L30.3745 65.0013L37.7345 52.1813H39.6345L31.3145 66.5813H29.4345ZM41.6131 66.5813V52.1813H54.7531V53.8013H43.2331V58.5613H52.4931V60.2013H43.2331V64.9613H54.7531V66.5813H41.6131ZM62.3348 66.5813V52.2013H74.3348C74.7748 52.2013 75.1748 52.3146 75.5348 52.5413C75.9082 52.7546 76.2015 53.0413 76.4148 53.4013C76.6282 53.7613 76.7348 54.1613 76.7348 54.6013V58.8213C76.7348 59.2613 76.6282 59.6613 76.4148 60.0213C76.2015 60.3813 75.9082 60.6746 75.5348 60.9013C75.1748 61.1146 74.7748 61.2213 74.3348 61.2213H63.9548V66.5813H62.3348ZM64.7348 59.5813H74.3348C74.5482 59.5813 74.7282 59.508 74.8748 59.3613C75.0348 59.2146 75.1148 59.0346 75.1148 58.8213V54.6013C75.1148 54.388 75.0348 54.208 74.8748 54.0613C74.7282 53.9013 74.5482 53.8213 74.3348 53.8213H64.7348C64.5215 53.8213 64.3348 53.9013 64.1748 54.0613C64.0282 54.208 63.9548 54.388 63.9548 54.6013V58.8213C63.9548 59.0346 64.0282 59.2146 64.1748 59.3613C64.3348 59.508 64.5215 59.5813 64.7348 59.5813ZM78.1752 66.5813V52.1613H79.7952V64.9613H92.5752V66.5813H78.1752ZM93.7811 66.5813V54.5813C93.7811 54.1413 93.8878 53.7413 94.1011 53.3813C94.3144 53.008 94.6011 52.7146 94.9611 52.5013C95.3344 52.288 95.7411 52.1813 96.1811 52.1813H105.781C106.221 52.1813 106.621 52.288 106.981 52.5013C107.354 52.7146 107.648 53.008 107.861 53.3813C108.074 53.7413 108.181 54.1413 108.181 54.5813V66.5813H106.561V61.3213H95.4011V66.5813H93.7811ZM95.4011 59.7013H106.561V54.5813C106.561 54.368 106.481 54.188 106.321 54.0413C106.174 53.8813 105.994 53.8013 105.781 53.8013H96.1811C95.9678 53.8013 95.7811 53.8813 95.6211 54.0413C95.4744 54.188 95.4011 54.368 95.4011 54.5813V59.7013ZM110.46 66.5813V52.1813H112.68L123.24 64.7413V52.1813H124.86V66.5813H122.64L112.08 54.0213V66.5813H110.46ZM127.14 66.5813V52.1813H140.28V53.8013H128.76V58.5613H138.02V60.2013H128.76V64.9613H140.28V66.5813H127.14ZM148.093 66.5813V53.8013H141.693V52.1813H156.093V53.8013H149.713V66.5813H148.093Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarliveplanet" aria-controls="navbarliveplanet" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse fundo-menu" id="navbarliveplanet">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#o-que-temos">
+                                    DIFERENCIAL
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#section-eventos">
+                                    EVENTOS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#section-livecoin">
+                                    INFORMAÇÕES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#section-quem-esta">
+                                    PARCEIROS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#section-blog">
+                                    METABLOG
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#section-faq">
+                                    DÚVIDAS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-3" href="https://liveplanet.com.br/#section-faq">
+                                    CONTATO
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <a target="_blank" href="https://liveplanet.app.br/welcome" type="button"
+                                class="btn btn-light ms-3">
+                                METAVERSO <i class="bi bi-box-arrow-in-right"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5521980920589&text=Ol%C3%A1%2C%20LivePlanet!%20Quero%20saber%20mais%20sobre%20o%20Metaverso"
+                                target="_blank" type="button" class="btn btn-success ms-4">
+                                WHATSAPP <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+            </nav>
+        </header>
+    </section>
+    <div class="container" style="margin-top: 10px;">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active nav-link-privacidade" data-bs-toggle="tab" href="#privacidade">Política de
+                    privacidade</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-privacidade" data-bs-toggle="tab" href="#termo">Termo de uso</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="privacidade">
+                <h2>Política Privacidade</h2>
+                <p>A sua privacidade é importante para nós. É política do Live Planet respeitar a sua privacidade em
+                    relação a qualquer informação sua que possamos coletar no site <a
+                        href=https://liveplanet.com.br>Live Planet</a>, e outros sites que possuímos e operamos.</p>
+                        <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer
+                        um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também
+                        informamos por que estamos coletando e como será usado. </p>
+                <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado.
+                    Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas
+                    e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+                <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando
+                    exigido por lei.</p>
+                <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que
+                    não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade
+                    por suas respectivas <a href='https://privacidade.me/' target='_BLANK'>políticas de privacidade</a>.
+                </p>
+                <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não
+                    possamos fornecer alguns dos serviços desejados.</p>
+                <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de
+                    privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do
+                    usuário e informações pessoais, entre em contato conosco.</p>
+                <h2>Política de Cookies Live Planet</h2>
+                <h3>O que são cookies?</h3>
+                <p>Como é prática comum em quase todos os sites profissionais, este site usa cookies, que são pequenos
+                    arquivos baixados no seu computador, para melhorar sua experiência. Esta página descreve quais
+                    informações eles coletam, como as usamos e por que às vezes precisamos armazenar esses cookies.
+                    Também compartilharemos como você pode impedir que esses cookies sejam armazenados, no entanto, isso
+                    pode fazer o downgrade ou 'quebrar' certos elementos da funcionalidade do site.</p>
+                <h3>Como usamos os cookies?</h3>
+                <p>Utilizamos cookies por vários motivos, detalhados abaixo. Infelizmente, na maioria dos casos, não
+                    existem opções padrão do setor para desativar os cookies sem desativar completamente a
+                    funcionalidade e os recursos que eles adicionam a este site. É recomendável que você deixe todos os
+                    cookies se não tiver certeza se precisa ou não deles, caso sejam usados ​​para fornecer um serviço
+                    que você usa.</p>
+                <h3>Desativar cookies</h3>
+                <p>Você pode impedir a configuração de cookies ajustando as configurações do seu navegador (consulte a
+                    Ajuda do navegador para saber como fazer isso). Esteja ciente de que a desativação de cookies
+                    afetará a funcionalidade deste e de muitos outros sites que você visita. A desativação de cookies
+                    geralmente resultará na desativação de determinadas funcionalidades e recursos deste site. Portanto,
+                    é recomendável que você não desative os cookies.</p>
+                <h3>Cookies que definimos</h3>
+                <ul>
+                    <li> Cookies relacionados à conta<br><br> Se você criar uma conta conosco, usaremos cookies para o
+                        gerenciamento do processo de inscrição e administração geral. Esses cookies geralmente serão
+                        excluídos quando você sair do sistema, porém, em alguns casos, eles poderão permanecer
+                        posteriormente para lembrar as preferências do seu site ao sair.<br><br> </li>
+                    <li> Cookies relacionados ao login<br><br> Utilizamos cookies quando você está logado, para que
+                        possamos lembrar dessa ação. Isso evita que você precise fazer login sempre que visitar uma nova
+                        página. Esses cookies são normalmente removidos ou limpos quando você efetua logout para
+                        garantir que você possa acessar apenas a recursos e áreas restritas ao efetuar login.<br><br>
+                    </li>
+                    <li> Cookies relacionados a boletins por e-mail<br><br> Este site oferece serviços de assinatura de
+                        boletim informativo ou e-mail e os cookies podem ser usados ​​para lembrar se você já está
+                        registrado e se deve mostrar determinadas notificações válidas apenas para usuários inscritos /
+                        não inscritos.<br><br> </li>
+                    <li> Pedidos processando cookies relacionados<br><br> Este site oferece facilidades de comércio
+                        eletrônico ou pagamento e alguns cookies são essenciais para garantir que seu pedido seja
+                        lembrado entre as páginas, para que possamos processá-lo adequadamente.<br><br> </li>
+                    <li> Cookies relacionados a pesquisas<br><br> Periodicamente, oferecemos pesquisas e questionários
+                        para fornecer informações interessantes, ferramentas úteis ou para entender nossa base de
+                        usuários com mais precisão. Essas pesquisas podem usar cookies para lembrar quem já participou
+                        numa pesquisa ou para fornecer resultados precisos após a alteração das páginas.<br><br> </li>
+                    <li> Cookies relacionados a formulários<br><br> Quando você envia dados por meio de um formulário
+                        como os encontrados nas páginas de contacto ou nos formulários de comentários, os cookies podem
+                        ser configurados para lembrar os detalhes do usuário para correspondência futura.<br><br> </li>
+                    <li> Cookies de preferências do site<br><br> Para proporcionar uma ótima experiência neste site,
+                        fornecemos a funcionalidade para definir suas preferências de como esse site é executado quando
+                        você o usa. Para lembrar suas preferências, precisamos definir cookies para que essas
+                        informações possam ser chamadas sempre que você interagir com uma página for afetada por suas
+                        preferências.<br> </li>
+                </ul>
+                <h3>Cookies de Terceiros</h3>
+                <p>Em alguns casos especiais, também usamos cookies fornecidos por terceiros confiáveis. A seção a
+                    seguir detalha quais cookies de terceiros você pode encontrar através deste site.</p>
+                <ul>
+                    <li> Este site usa o Google Analytics, que é uma das soluções de análise mais difundidas e
+                        confiáveis ​​da Web, para nos ajudar a entender como você usa o site e como podemos melhorar sua
+                        experiência. Esses cookies podem rastrear itens como quanto tempo você gasta no site e as
+                        páginas visitadas, para que possamos continuar produzindo conteúdo atraente. </li>
+                </ul>
+                <p>Para mais informações sobre cookies do Google Analytics, consulte a página oficial do Google
+                    Analytics.</p>
+                <ul>
+                    <li> As análises de terceiros são usadas para rastrear e medir o uso deste site, para que possamos
+                        continuar produzindo conteúdo atrativo. Esses cookies podem rastrear itens como o tempo que você
+                        passa no site ou as páginas visitadas, o que nos ajuda a entender como podemos melhorar o site
+                        para você.</li>
+                    <li> Periodicamente, testamos novos recursos e fazemos alterações subtis na maneira como o site se
+                        apresenta. Quando ainda estamos testando novos recursos, esses cookies podem ser usados ​​para
+                        garantir que você receba uma experiência consistente enquanto estiver no site, enquanto
+                        entendemos quais otimizações os nossos usuários mais apreciam.</li>
+                    <li> À medida que vendemos produtos, é importante entendermos as estatísticas sobre quantos
+                        visitantes de nosso site realmente compram e, portanto, esse é o tipo de dados que esses cookies
+                        rastrearão. Isso é importante para você, pois significa que podemos fazer previsões de negócios
+                        com precisão que nos permitem analizar nossos custos de publicidade e produtos para garantir o
+                        melhor preço possível.</li>
+                </ul>
+                <h3>Compromisso do Usuário</h3>
+                <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Live Planet oferece
+                    no site e com caráter enunciativo, mas não limitativo:</p>
+                <ul>
+                    <li>A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;
+                    </li>
+                    <li>B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, ou casas de apostas,
+                        jogos de sorte e azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra
+                        os direitos humanos;</li>
+                    <li>C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Live Planet, de
+                        seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer
+                        outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente
+                        mencionados.</li>
+                </ul>
+                <h3>Mais informações</h3>
+                <p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem
+                    certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um
+                    dos recursos que você usa em nosso site.</p>
+                <p>Esta política é efetiva a partir de <strong>Aug</strong>/<strong>2022</strong>.</p>
+            </div>
+            <div class="tab-pane container fade" id="termo">
+                <h2>1. Termos</h2>
+                <p>Ao acessar ao site <a href='https://liveplanet.com.br'>Live Planet</a>, concorda em cumprir estes
+                    termos de serviço, todas as leis e regulamentos aplicáveis ​​e concorda que é responsável pelo
+                    cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum desses termos, está
+                    proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de
+                    direitos autorais e marcas comerciais aplicáveis.</p>
+                <h2>2. Uso de Licença</h2>
+                <p>É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software)
+                    no site Live Planet , apenas para visualização transitória pessoal e não comercial. Esta é a
+                    concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode: </p>
+                <ol>
+                    <li>modificar ou copiar os materiais; </li>
+                    <li>usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não
+                        comercial); </li>
+                    <li>tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Live Planet;
+                    </li>
+                    <li>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou </li>
+                    <li>transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.
+                    </li>
+                </ol>
+                <p>Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser
+                    rescindida por Live Planet a qualquer momento. Ao encerrar a visualização desses materiais ou após o
+                    término desta licença, você deve apagar todos os materiais baixados em sua posse, seja em formato
+                    eletrónico ou impresso.</p>
+                <h2>3. Isenção de responsabilidade</h2>
+                <ol>
+                    <li>Os materiais no site da Live Planet são fornecidos 'como estão'. Live Planet não oferece
+                        garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias,
+                        incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um
+                        fim específico ou não violação de propriedade intelectual ou outra violação de direitos. </li>
+                    <li>Além disso, o Live Planet não garante ou faz qualquer representação relativa à precisão, aos
+                        resultados prováveis ​​ou à confiabilidade do uso dos materiais em seu site ou de outra forma
+                        relacionado a esses materiais ou em sites vinculados a este site.</li>
+                </ol>
+                <h2>4. Limitações</h2>
+                <p>Em nenhum caso o Live Planet ou seus fornecedores serão responsáveis ​​por quaisquer danos
+                    (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios)
+                    decorrentes do uso ou da incapacidade de usar os materiais em Live Planet, mesmo que Live Planet ou
+                    um representante autorizado da Live Planet tenha sido notificado oralmente ou por escrito da
+                    possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias
+                    implícitas, ou limitações de responsabilidade por danos conseqüentes ou incidentais, essas
+                    limitações podem não se aplicar a você.</p>
+                <h2>5. Precisão dos materiais</h2>
+                <p>Os materiais exibidos no site da Live Planet podem incluir erros técnicos, tipográficos ou
+                    fotográficos. Live Planet não garante que qualquer material em seu site seja preciso, completo ou
+                    atual. Live Planet pode fazer alterações nos materiais contidos em seu site a qualquer momento, sem
+                    aviso prévio. No entanto, Live Planet não se compromete a atualizar os materiais.</p>
+                <h2>6. Links</h2>
+                <p>O Live Planet não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de
+                    nenhum site vinculado. A inclusão de qualquer link não implica endosso por Live Planet do site. O
+                    uso de qualquer site vinculado é por conta e risco do usuário.</p>
+                </p>
+                <h3>Modificações</h3>
+                <p>O Live Planet pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao
+                    usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.</p>
+                <h3>Lei aplicável</h3>
+                <p>Estes termos e condições são regidos e interpretados de acordo com as leis do Live Planet e você se
+                    submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Footer-->
+    <footer class="section-footer pt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg col-sm-12 newsletter">
+                    <h3 class="text-white mt-5 mb-4 display-6" style="font-size:1.8rem ;">
+                        Inscreva-se para notícias e atualizações mais recentes.</h2>
+                        <form class="row ">
+                            <div class="col-10 pe-0 align-items-end">
+                                <label class="visually-hidden" for="inlineFormInputGroupEmail">Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-envelope"></i></div>
+                                    <input type="email" class="form-control rounded-0" id="inlineFormInputGroupEmail"
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-2 p-0">
+                                <button style="border-top-left-radius: 0;border-bottom-left-radius: 0;" type="submit"
+                                    class="btn btn-secondary rounded-end">Submit</button>
+                            </div>
+                        </form>
+                </div>
+                <div class="col-lg col-sm-12 text-center my-3">
+                    <svg height="160" viewBox="0 0 198 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M152.826 93.7228H99.2099H45.5938L72.4018 46.8614L99.2099 0L126.018 46.8614L152.826 93.7228Z"
+                            fill="#CF50F9" />
+                        <path
+                            d="M146.261 82.2082H99.2123H52.1641L75.6882 41.1041L99.2123 0L122.736 41.1041L146.261 82.2082Z"
+                            fill="#58CFEF" />
+                        <path
+                            d="M146.257 82.2084H105.777H65.2969L85.537 46.8281L105.777 11.4478L126.017 46.8281L146.257 82.2084Z"
+                            fill="#2D349E" />
+                        <path
+                            d="M132.723 82.2452H98.9983H65.2734L82.1359 52.769L98.9983 23.293L115.861 52.769L132.723 82.2452Z"
+                            fill="#131542" />
+                        <path
+                            d="M102.333 36.2021C98.0713 36.2055 93.8632 37.154 90.0128 38.9791L82.0283 52.8166L73.6719 67.2991C74.2139 73.9903 77.0821 80.2813 81.7796 85.0822C84.4583 87.8152 87.6558 89.9871 91.185 91.4708C94.7143 92.9545 98.5043 93.72 102.333 93.7228C106.162 93.72 109.952 92.9545 113.482 91.4708C117.011 89.9871 120.208 87.8152 122.887 85.0822C126.48 81.4139 129.025 76.8521 130.258 71.8702C130.826 69.6112 131.118 67.2917 131.126 64.9625C131.125 58.7295 129.097 52.6656 125.347 47.6837C121.596 42.7018 116.328 39.0716 110.333 37.3397C107.733 36.5868 105.04 36.2038 102.333 36.2021Z"
+                            fill="#FBBA3C" />
+                        <path opacity="0.3"
+                            d="M130.496 70.731H74.168C75.019 74.8968 76.7831 78.8228 79.3335 82.2268H125.331C127.665 79.1342 129.351 75.603 130.287 71.8446C130.364 71.4748 130.434 71.1035 130.496 70.731Z"
+                            fill="#ED3C46" />
+                        <path opacity="0.5"
+                            d="M130.527 59.2354H78.2719L73.6367 67.2685C73.7436 68.4325 73.9213 69.5889 74.169 70.7313H130.497C130.914 68.8246 131.135 66.8806 131.158 64.9292C131.137 63.015 130.926 61.1076 130.527 59.2354Z"
+                            fill="#ED3C46" />
+                        <path opacity="0.7"
+                            d="M125.345 47.7397H84.9066L82.0044 52.7694L78.2734 59.2356H130.528C129.672 55.0682 127.902 51.1421 125.345 47.7397Z"
+                            fill="#ED3C46" />
+                        <path
+                            d="M102.333 36.1355C98.0656 36.1389 93.8526 37.0885 89.9977 38.9157L84.9062 47.7396H125.344C121.614 42.7162 116.348 39.0427 110.342 37.2745C107.739 36.5206 105.043 36.1372 102.333 36.1355Z"
+                            fill="#ED3C46" />
+                        <path
+                            d="M46.0456 134V105.16H49.2856V130.76H74.8456V134H46.0456ZM77.5775 134V105.2H80.8575V134H77.5775ZM101.572 134L84.8922 105.2H88.6922L103.452 130.84L118.172 105.2H121.972L105.332 134H101.572ZM125.929 134V105.2H152.209V108.44H129.169V117.96H147.689V121.24H129.169V130.76H152.209V134H125.929ZM47.8424 162V146.182H61.0424C61.5264 146.182 61.9664 146.307 62.3624 146.556C62.773 146.791 63.0957 147.106 63.3304 147.502C63.565 147.898 63.6824 148.338 63.6824 148.822V153.464C63.6824 153.948 63.565 154.388 63.3304 154.784C63.0957 155.18 62.773 155.503 62.3624 155.752C61.9664 155.987 61.5264 156.104 61.0424 156.104H49.6244V162H47.8424ZM50.4824 154.3H61.0424C61.277 154.3 61.475 154.219 61.6364 154.058C61.8124 153.897 61.9004 153.699 61.9004 153.464V148.822C61.9004 148.587 61.8124 148.389 61.6364 148.228C61.475 148.052 61.277 147.964 61.0424 147.964H50.4824C50.2477 147.964 50.0424 148.052 49.8664 148.228C49.705 148.389 49.6244 148.587 49.6244 148.822V153.464C49.6244 153.699 49.705 153.897 49.8664 154.058C50.0424 154.219 50.2477 154.3 50.4824 154.3ZM65.2667 162V146.138H67.0487V160.218H81.1067V162H65.2667ZM82.4332 162V148.8C82.4332 148.316 82.5506 147.876 82.7852 147.48C83.0199 147.069 83.3352 146.747 83.7312 146.512C84.1419 146.277 84.5892 146.16 85.0732 146.16H95.6332C96.1172 146.16 96.5572 146.277 96.9532 146.512C97.3639 146.747 97.6866 147.069 97.9212 147.48C98.1559 147.876 98.2732 148.316 98.2732 148.8V162H96.4912V156.214H84.2152V162H82.4332ZM84.2152 154.432H96.4912V148.8C96.4912 148.565 96.4032 148.367 96.2272 148.206C96.0659 148.03 95.8679 147.942 95.6332 147.942H85.0732C84.8386 147.942 84.6332 148.03 84.4572 148.206C84.2959 148.367 84.2152 148.565 84.2152 148.8V154.432ZM100.78 162V146.16H103.222L114.838 159.976V146.16H116.62V162H114.178L102.562 148.184V162H100.78ZM119.129 162V146.16H133.583V147.942H120.911V153.178H131.097V154.982H120.911V160.218H133.583V162H119.129ZM142.176 162V147.942H135.136V146.16H150.976V147.942H143.958V162H142.176Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="col-lg col-sm-12 d-flex align-items-end justify-content-center">
+                    <div class="rounded-3 m-3 px-3 py-3 chamada-discord">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center">
+                                <i class="icon-discord bi bi-discord bg-light rounded-circle fs-2"></i>
+                            </div>
+                            <div class="text-white col">
+                                <h3>Precisa de ajuda?</h3>
+                                <p class="text-white">Se você quiser saber mais ou perguntar algo, junte-se ao nosso
+                                    servidor Discord</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white my-4">
+            <div id="copyright">
+                <p><a href=""><i class="bi bi-linkedin me-4 text-white fs-2"></i></a><a href=""><i
+                            class="bi bi-instagram me-4 text-white fs-2"></i></a><a href=""><i
+                            class="bi bi-twitter me-4 text-white fs-2"></i></a><a href=""><i
+                            class="bi bi-youtube me-4 text-white fs-2"></i></a><small class="text-white me-2">©
+                        LIVEPLANET / LIVEOFFICE</small><small class="text-secondary"> • 2022 • Todos os direitos
+                        reservados</small></p>
+            </div>
+        </div>
+    </footer>
+    <!--Modal Newsletter-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 start-0 translate-middle">
+                            <svg width="300" viewBox="0 0 118 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_1433_77)">
+                                    <path
+                                        d="M107.232 93.7228H53.6162H0L26.8081 46.8614L53.6162 0L80.4243 46.8614L107.232 93.7228Z"
+                                        fill="#CF50F9" />
+                                    <path
+                                        d="M100.667 82.2082H53.6185H6.57031L30.0944 41.1041L53.6185 0L77.1426 41.1041L100.667 82.2082Z"
+                                        fill="#58CFEF" />
+                                    <path
+                                        d="M100.664 82.2084H60.1834H19.7031L39.9432 46.8281L60.1834 11.4478L80.4235 46.8281L100.664 82.2084Z"
+                                        fill="#2D349E" />
+                                    <path
+                                        d="M87.1295 82.2452H53.4046H19.6797L36.5421 52.769L53.4046 23.293L70.267 52.769L87.1295 82.2452Z"
+                                        fill="#131542" />
+                                    <path
+                                        d="M56.7395 36.2021C52.4776 36.2055 48.2695 37.154 44.419 38.9791L36.4346 52.8166L28.0781 67.2991C28.6201 73.9903 31.4884 80.2813 36.1859 85.0822C38.8645 87.8152 42.0621 89.9871 45.5913 91.4708C49.1205 92.9545 52.9105 93.72 56.7395 93.7228C60.5686 93.72 64.3586 92.9545 67.8878 91.4708C71.417 89.9871 74.6146 87.8152 77.2932 85.0822C80.8862 81.4139 83.431 76.8521 84.6638 71.8702C85.2323 69.6112 85.5238 67.2917 85.5322 64.9625C85.5311 58.7295 83.5029 52.6656 79.7528 47.6837C76.0027 42.7018 70.7338 39.0716 64.7394 37.3397C62.1396 36.5868 59.4465 36.2038 56.7395 36.2021Z"
+                                        fill="#FBBA3C" />
+                                    <path opacity="0.3"
+                                        d="M84.9026 70.731H28.5742C29.4252 74.8968 31.1893 78.8228 33.7398 82.2268H79.7374C82.0716 79.1342 83.7572 75.603 84.6933 71.8446C84.7704 71.4748 84.8402 71.1035 84.9026 70.731Z"
+                                        fill="#ED3C46" />
+                                    <path opacity="0.5"
+                                        d="M84.9291 59.2354H32.6742L28.0391 67.2685C28.1459 68.4325 28.3237 69.5889 28.5713 70.7313H84.8997C85.316 68.8246 85.5372 66.8806 85.5599 64.9292C85.5396 63.015 85.3283 61.1076 84.9291 59.2354V59.2354Z"
+                                        fill="#ED3C46" />
+                                    <path opacity="0.7"
+                                        d="M79.7511 47.7397H39.3129L36.4107 52.7694L32.6797 59.2356H84.9345C84.0781 55.0682 82.3079 51.1421 79.7511 47.7397Z"
+                                        fill="#ED3C46" />
+                                    <path
+                                        d="M56.7388 36.1355C52.4719 36.1389 48.2589 37.0885 44.4039 38.9157L39.3125 47.7396H79.7507C76.0204 42.7162 70.754 39.0427 64.748 37.2745C62.1451 36.5206 59.4489 36.1372 56.7388 36.1355Z"
+                                        fill="#ED3C46" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_1433_77" x="0" y="0" width="117.23" height="101.723"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="6" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_1433_77" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1433_77"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="container-fluid text-white">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-9">
+                                <span class="titulo-fino fs-2">FAÇA PARTE DO</span>
+                                <span class="titulo-grosso fs-2">FUTURO AGORA!</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mx-auto mt-5 text-center">Vivamus suscipit tortor eget felis porttitor
+                                volutpat. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat.</div>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="button" class="btn btn-success shadow my-4 mx-auto">
+                                WHATSAPP <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </div>
+                        <p class="text-center">Horário de atendimento: 08:00 às 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal vídeo Escritórios Virtuais-->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <i class="fs-2 bi bi-building"></i>
+                        <span class="titulo-grosso fs-2">Escritórios</span>
+                        <span class="titulo-fino fs-2">Virtuais</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/bb1QwtY3Ejo" title="YouTube video"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Botão para subir-->
+    <a id="subir"></a>
+    <script>
+        var btn = $('#subir');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+    <!-- Js barra de cookies -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("esconder");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Js carousel -->
+    <script>
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        const track = document.querySelector('.track');
+
+        let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+
+        window.addEventListener('resize', () => {
+            carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+        })
+
+        let index = 0;
+
+        next.addEventListener('click', () => {
+            index++;
+            prev.classList.add('show');
+            track.style.transform = `translateX(-${index * carouselWidth}px)`;
+
+            if (track.offsetWidth - (index * carouselWidth) < carouselWidth) {
+                next.classList.add('hide');
+            }
+        })
+
+        prev.addEventListener('click', () => {
+            index--;
+            next.classList.remove('hide');
+            if (index === 0) {
+                prev.classList.remove('show');
+            }
+            track.style.transform = `translateX(-${index * carouselWidth}px)`;
+        })
+    </script>
+    <!--Javascript do Modal Newsletter-->
+    <script>
+        $(document).ready(function () {
+            if (document.cookie.indexOf("OpenPage=true") == -1) {
+                document.cookie = "OpenPage=true; max-age=86400"; // 86400: seconds in a day
+                $('#exampleModal').modal('show');
+            }
+        });
+    </script>
+</body>
+
+</html>
